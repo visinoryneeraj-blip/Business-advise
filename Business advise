@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Growth Advisor</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #007bff; color: white; text-align: center; padding: 20px; }
+        .container { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { color: #333; }
+        .advice { margin-bottom: 20px; }
+        footer { text-align: center; padding: 10px; background: #007bff; color: white; }
+        form { display: flex; flex-direction: column; }
+        input, textarea { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #28a745; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Business Growth Advisor</h1>
+        <p>Expert tips for growing your business!</p>
+    </header>
+    
+    <div class="container">
+        <h2>Business Growth Tips</h2>
+        <div class="advice">
+            <h3>1. Digital Marketing</h3>
+            <p>Use social media aur SEO to reach more customers. Example: Facebook ads for local businesses.</p>
+        </div>
+        <div class="advice">
+            <h3>2. Customer Retention</h3>
+            <p>Build loyalty with email newsletters aur discounts. Track feedback regularly.</p>
+        </div>
+        <!-- Add more tips here -->
+        
+        <h2>Contact Me for Personalized Advice</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Describe your business issue" rows="5" required></textarea>
+            <button type="submit">Send Advice Request</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Business Growth Advisor. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thanks! Your message has been sent. I will get back to you soon.');
+            // Yahan email service integrate kar sakte ho, jaise EmailJS
+        });
+    </script>
+</body>
+</html>
